@@ -11,7 +11,8 @@ min-height: 100vh;
        
        .title{
         text-align: center;
-        color: azure;
+        color: black;
+        text-shadow: 0 0 3px whitesmoke ;
        }
 
        .bulb-container{
@@ -34,7 +35,7 @@ min-height: 100vh;
         justify-content: center;
         margin-top: 20px;
        }
-
+      
        .toggle-btn{
         font-size: 20px;
         padding: 5px 20px;
@@ -43,17 +44,23 @@ min-height: 100vh;
         margin: 0 20px;
         cursor: pointer;
        }
-       .toggle-btn:hover{
-        box-shadow: 0 0 20px 0 whitesmoke;
-       }
 
        .btn-on{
-        background-color: green;
+        background-color: #3282a46e;
+       }
+       .btn-on:hover{
+        box-shadow: 0 0 20px 0 rgb(18, 199, 114);
+        background-color: lawngreen;
        }
 
        .btn-of{
-        background-color: red;
+        background-color: #3282a46e;
        }
+       .btn-of:hover{
+        box-shadow: 0 0 20px 0 rgb(154, 14, 14);
+        background-color: lightcoral;
+       }
+      
 
        @media screen and (max-width: 600px) {
             .bulb-container {
