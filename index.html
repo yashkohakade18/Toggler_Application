@@ -22,13 +22,39 @@ min-height: 100vh;
         justify-content: center;
         padding: 10px;
         border-radius: 20px;
-        box-shadow: 0 0 10px whitesmoke (0, 0, 0, 0.1);
+        box-shadow: 0 0 5px whitesmoke ;
        }
 
        .bulb-img{
         height: 250px;
        }
        
+       .button-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+       }
+
+       .toggle-btn{
+        font-size: 20px;
+        padding: 5px 20px;
+        border-radius: 40px;
+        border: none;
+        margin: 0 20px;
+        cursor: pointer;
+       }
+       .toggle-btn:hover{
+        box-shadow: 0 0 20px 0 whitesmoke;
+       }
+
+       .btn-on{
+        background-color: green;
+       }
+
+       .btn-of{
+        background-color: red;
+       }
+
        @media screen and (max-width: 600px) {
             .bulb-container {
                 width: 80%;
@@ -44,8 +70,24 @@ min-height: 100vh;
 <body>
     <h1 class="title">BULB-TOGGLER</h1>
     <div class="bulb-container" >
-        <img src="./img/light bulb-off.png" class="bulb-img" />
+        <img src="./img/light bulb-off.png" class="bulb-img" id="bulb" />
 
     </div>
+    <div class="button-container" >
+        <button class="toggle-btn btn-on" onclick="toggleBulb('on')">ON</button>
+        <button class="toggle-btn btn-of" onclick="toggleBulb('off')">OFF</button>
+    </div>
+
+    <script>
+        function toggleBulb(state){
+            const bulbElement = document.getElementById('bulb');
+            if(state=='on'){
+                bulbElement.src = 'light bulb-on.png';
+            }
+            else {
+                bulbElement.src = 'light bulb-off.png';
+            }
+        }
+    </script>
 </body>
 </html>
