@@ -11,8 +11,10 @@ min-height: 100vh;
        
        .title{
         text-align: center;
-        color: black;
-        text-shadow: 0 0 3px whitesmoke ;
+        color: rgba(117, 117, 117, 0.804);
+        text-shadow: 0 0 2px whitesmoke ;
+        text-decoration-line:overline ;
+        
        }
 
        .bulb-container{
@@ -61,6 +63,23 @@ min-height: 100vh;
         background-color: lightcoral;
        }
       
+       .title-2{
+        text-align: center;
+        color: rgba(117, 117, 117, 0.804);
+        text-shadow: 0 0 2px whitesmoke ;
+        text-decoration-line:overline ;
+       }
+
+       .emoji-container{
+        background-color: #3282a46e;
+        width: 400px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px whitesmoke ;
+       }
 
        @media screen and (max-width: 600px) {
             .bulb-container {
@@ -78,6 +97,18 @@ min-height: 100vh;
     <h1 class="title">BULB-TOGGLER</h1>
     <div class="bulb-container" >
         <img src="light bulb-off.png" class="bulb-img" id="bulb" />
+
+    </div>
+    <div class="button-container" >
+        <button class="toggle-btn btn-on" onclick="toggleBulb('on')">ON</button>
+        <button class="toggle-btn btn-of" onclick="toggleBulb('off')">OFF</button>
+    </div>
+    <br/>
+    <br/>
+
+    <h1 class="title-2">EMOJI-TOGGLER</h1>
+    <div class="emoji-container" >
+        <img src="mood.png" class="bulb-img" id="bulb" />
 
     </div>
     <div class="button-container" >
