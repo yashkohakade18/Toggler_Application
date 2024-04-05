@@ -9,8 +9,12 @@ whether you are an employee or a normal person this Appplication can help you to
 
 ![output](bulb-onoutput.png)
 `BULB-ON`
+
 ![output](bulb-offoutput.png)
 `BULB-OFF`
+
+![output](emojitoggler.png)
+`EMOJI-TOGGLER`
 
 
 ## How to contribute 
