@@ -68,6 +68,7 @@ min-height: 100vh;
         color: rgba(117, 117, 117, 0.804);
         text-shadow: 0 0 2px whitesmoke ;
         text-decoration-line:overline ;
+        margin-top: 50px;
        }
 
        .emoji-container{
@@ -80,6 +81,66 @@ min-height: 100vh;
         border-radius: 20px;
         box-shadow: 0 0 5px whitesmoke ;
        }
+
+       .mood-img{
+        height: 250px;
+       }
+
+       .emoji-btn{
+        font-size: 20px;
+        padding: 5px 20px;
+        border-radius: 40px;
+        border: none;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+       }
+
+    
+       .btn-happy{
+        background-color: #3282a46e;
+        
+       }
+       .btn-happy:hover{
+        box-shadow: 0 0 20px 0 rgb(18, 199, 114);
+        background-color: lawngreen;
+       }
+
+       .btn-sad{
+        background-color: #3282a46e;
+        margin: 25px 0px;
+       }
+       .btn-sad:hover{
+        box-shadow: 0 0 20px 0 rgb(154, 14, 14);
+        background-color: lightcoral;
+    
+       }
+
+       .btn-laugh{
+        background-color: #3282a46e;
+       }
+       .btn-laugh:hover{
+        box-shadow: 0 0 20px 0 rgb(18, 199, 114);
+        background-color: lawngreen;
+       }
+
+       .btn-angry{
+        background-color: #3282a46e;
+       }
+       .btn-angry:hover{
+        box-shadow: 0 0 20px 0 rgb(154, 14, 14);
+        background-color: lightcoral;
+       }
+
+       .btn-think{
+        background-color: #3282a46e;
+       }
+       .btn-think:hover{
+        box-shadow: 0 0 20px 0 rgb(18, 199, 114);
+        background-color: lawngreen;
+       }
+      
 
        @media screen and (max-width: 600px) {
             .bulb-container {
@@ -105,16 +166,25 @@ min-height: 100vh;
     </div>
     <br/>
     <br/>
+    <hr/>
+    <hr/>
 
     <h1 class="title-2">EMOJI-TOGGLER</h1>
     <div class="emoji-container" >
-        <img src="mood.png" class="bulb-img" id="bulb" />
+        <img src="mood.png" class="mood-img" id="mood" />
 
     </div>
     <div class="button-container" >
-        <button class="toggle-btn btn-on" onclick="toggleBulb('on')">ON</button>
-        <button class="toggle-btn btn-of" onclick="toggleBulb('off')">OFF</button>
+        <button class="emoji-btn btn-happy" onclick="">HAPPY</button>
+        <button class="emoji-btn btn-sad" onclick="">SAD</button>
+        <button class="emoji-btn btn-laugh" onclick="">LAUGH</button>
+        <button class="emoji-btn btn-sad" onclick="">ANGRY</button>
+        <button class="emoji-btn btn-think" onclick="">THINK</button>
     </div>
+    <br/>
+    <br/>
+    <hr/>
+    <hr/>
 
     <script>
         function toggleBulb(state){
