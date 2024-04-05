@@ -181,7 +181,7 @@ min-height: 100vh;
 
     </div>
     <div class="button-container" >
-        <button class="emoji-btn btn-happy" onclick="">HAPPY</button>
+        <button class="emoji-btn btn-happy" onclick="change()" >HAPPY</button>
         <button class="emoji-btn btn-sad" onclick="">SAD</button>
         <button class="emoji-btn btn-laugh" onclick="">LAUGH</button>
         <button class="emoji-btn btn-angry" onclick="">ANGRY</button>
@@ -201,6 +201,11 @@ min-height: 100vh;
             else {
                 bulbElement.src =('light bulb-off.png');
             }
+        }
+
+        function change(){
+            const emojiElement = document.getElementById('mood')
+            emojiElement.src = ('happy.png')
         }
     </script>
 </body>
