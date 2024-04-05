@@ -181,11 +181,11 @@ min-height: 100vh;
 
     </div>
     <div class="button-container" >
-        <button class="emoji-btn btn-happy" onclick="toggleemoji()" >HAPPY</button>
-        <button class="emoji-btn btn-sad" onclick="toggleemoji()">SAD</button>
-        <button class="emoji-btn btn-laugh" onclick="toggleemoji()">LAUGH</button>
-        <button class="emoji-btn btn-angry" onclick="toggleemoji()">ANGRY</button>
-        <button class="emoji-btn btn-think" onclick="toggleemoji()">THINK</button>
+        <button class="emoji-btn btn-happy" onclick="turnhappy()" >HAPPY</button>
+        <button class="emoji-btn btn-sad" onclick="turnsad()">SAD</button>
+        <button class="emoji-btn btn-laugh" onclick="turnlaugh()">LAUGH</button>
+        <button class="emoji-btn btn-angry" onclick="turnangry()">ANGRY</button>
+        <button class="emoji-btn btn-think" onclick="turnthink()">THINK</button>
     </div>
     <br/>
     <br/>
@@ -203,10 +203,25 @@ min-height: 100vh;
             }
         }
 
-        function toggleemoji(){
+        function turnhappy(){
             const emojiElement = document.getElementById('mood');
             emojiElement.src = ('happy.png');
+        }
+        function turnsad(){
+            const emojiElement = document.getElementById('mood');
             emojiElement.src = ('sad.png');
+        }
+        function turnlaugh(){
+            const emojiElement = document.getElementById('mood');
+            emojiElement.src = ('laugh.png');
+        }
+        function turnangry(){
+            const emojiElement = document.getElementById('mood');
+            emojiElement.src = ('angry.png');
+        }
+        function turnthink(){
+            const emojiElement = document.getElementById('mood');
+            emojiElement.src = ('think.png');
         }
     </script>
 </body>
