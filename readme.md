@@ -7,7 +7,7 @@ course`.
 
 whether you are an employee or a normal person this Appplication can help you to have a basic idea about how a Toggler is designed and how it  works.This `Toggler` is based on the design of `Bulb-Toggler` & `Emoji-Toggler`.
 
-![output](bulb-on output.png)
+![output](bulb-onoutput.png)
 
 
 ## How to contribute 
