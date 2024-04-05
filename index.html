@@ -181,11 +181,11 @@ min-height: 100vh;
 
     </div>
     <div class="button-container" >
-        <button class="emoji-btn btn-happy" onclick="change()" >HAPPY</button>
-        <button class="emoji-btn btn-sad" onclick="">SAD</button>
-        <button class="emoji-btn btn-laugh" onclick="">LAUGH</button>
-        <button class="emoji-btn btn-angry" onclick="">ANGRY</button>
-        <button class="emoji-btn btn-think" onclick="">THINK</button>
+        <button class="emoji-btn btn-happy" onclick="toggleemoji()" >HAPPY</button>
+        <button class="emoji-btn btn-sad" onclick="toggleemoji()">SAD</button>
+        <button class="emoji-btn btn-laugh" onclick="toggleemoji()">LAUGH</button>
+        <button class="emoji-btn btn-angry" onclick="toggleemoji()">ANGRY</button>
+        <button class="emoji-btn btn-think" onclick="toggleemoji()">THINK</button>
     </div>
     <br/>
     <br/>
@@ -203,9 +203,10 @@ min-height: 100vh;
             }
         }
 
-        function change(){
-            const emojiElement = document.getElementById('mood')
-            emojiElement.src = ('happy.png')
+        function toggleemoji(){
+            const emojiElement = document.getElementById('mood');
+            emojiElement.src = ('happy.png');
+            emojiElement.src = ('sad.png');
         }
     </script>
 </body>
